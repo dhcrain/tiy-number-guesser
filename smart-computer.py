@@ -17,14 +17,22 @@ for turn in range(turns):
         break
     else:
         turns -= 1
+        if abs((c_guess - num)) <= 10:
+            high = c_guess + 10
+            low = c_guess - 10
+            if high > 100:
+                high = 100
+            if low < 0:
+                low = 0
+            print("Skynet is getting closer...")
         if c_guess > num:
-            print("high Skynet's guess was {}".format(c_guess))
+            print("Skynet's high guess was {}".format(c_guess))
             high = c_guess - 1
             c_guess = random.randint(low, high)
         elif c_guess < num:
-            print("low Skynet's guess was {}".format(c_guess))
+            print("Skynet's low guess was {}".format(c_guess))
             low = c_guess + 1
             c_guess = random.randint(low, high)
         else:
-            print("You Loose!, Skynet's guessed your secret number, {}!".format(num))
+            print("You Loose!, Skynet guessed your secret number, {}!".format(num))
             break
