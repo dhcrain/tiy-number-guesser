@@ -11,7 +11,7 @@ for turn in range(turns):
     try:
         num = int(num)
     except ValueError:
-        print("You must pick and number!")
+        print("You must pick a number!")
         break
     else:
         turns -= 1
