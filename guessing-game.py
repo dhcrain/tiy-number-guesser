@@ -5,7 +5,7 @@ turns = 5
 
 print("Guess the number Game!\nYou have {} guesses to "
       "guess the random number between 1 and 100.".format(turns))
-print(rand_num)
+# print(rand_num)
 for turn in range(turns):
     guess = input("What is your guess? ")
     turns -= 1
