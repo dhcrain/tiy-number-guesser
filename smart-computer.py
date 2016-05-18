@@ -3,7 +3,7 @@ import random
 low = 1
 high = 100
 c_guess = 50
-turns = 10
+turns = 5
 
 print("Trick Skynet Number Game!\nSkynet has {} guesses to "
       "guess your number between 1 and 100.".format(turns))

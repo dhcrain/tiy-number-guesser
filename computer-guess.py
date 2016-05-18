@@ -16,14 +16,14 @@ for turn in range(turns):
     else:
         turns -= 1
         if c_guess > num:
-            print("high Skynet's guess was {}".format(c_guess))
+            print("Skynet's high guess was {}".format(c_guess))
             c_guess = random.randint(1, c_guess)
         elif c_guess < num:
-            print("low Skynet's guess was {}".format(c_guess))
+            print("Skynet's low guess was {}".format(c_guess))
             c_guess = random.randint(c_guess, 100)
         else:
             print("You Loose!, Skynet's guessed your secret number, {}!".format(num))
             break
 
         if abs((c_guess - num)) <= 10:
-            print("The Computer is within 10 of your Secret Number!")
+            print("Skynet is getting closer...")
