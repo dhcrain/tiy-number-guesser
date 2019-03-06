@@ -1,2 +1,5 @@
 .idea/
 test.py
+.direnv/
+.envrc
+.vscode/
